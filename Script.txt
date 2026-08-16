@@ -295,11 +295,11 @@ for k, v in pairs(SammyDB) do
 end
 
 -- // [3] RECURSIVE UI CONSTRUCTION // --
-local old = PlayerGui:FindFirstChild("TigysCodeRedeemerPillUI")
+local old = PlayerGui:FindFirstChild("VenomsCodeRedeemerPillUI")
 if old then old:Destroy() end
 
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "TigysCodeRedeemerPillUI"
+ScreenGui.Name = "VenomsCodeRedeemerPillUI"
 ScreenGui.DisplayOrder = 8
 ScreenGui.IgnoreGuiInset = true
 ScreenGui.ResetOnSpawn = false
@@ -349,7 +349,7 @@ PillText.Name = "PillText"
 PillText.Size = UDim2.new(0, 138, 1, 0)
 PillText.Position = UDim2.new(0, 32, 0, 0)
 PillText.BackgroundTransparency = 1
-PillText.Text = "Tigy’s Redeemer"
+PillText.Text = "Venom’s Redeemer"
 PillText.TextColor3 = Color3.fromRGB(238, 238, 245)
 PillText.Font = Enum.Font.GothamBold
 PillText.TextSize = 14
@@ -496,7 +496,7 @@ FooterLabel.Name = "FooterLabel"
 FooterLabel.Size = UDim2.new(1, 0, 0, 16)
 FooterLabel.Position = UDim2.new(0, 0, 1, -20)
 FooterLabel.BackgroundTransparency = 1
-FooterLabel.Text = "TIGY SCRIPTS"
+FooterLabel.Text = "VENOM SCRIPTS"
 FooterLabel.TextColor3 = Color3.fromRGB(105, 105, 125)
 FooterLabel.Font = Enum.Font.GothamMedium
 FooterLabel.TextSize = 11
@@ -508,7 +508,7 @@ FooterLink.Name = "FooterLink"
 FooterLink.Size = UDim2.new(1, 0, 0, 13)
 FooterLink.Position = UDim2.new(0, 0, 1, -6)
 FooterLink.BackgroundTransparency = 1
-FooterLink.Text = "https://discord.gg/bzyNGBVEz4"
+FooterLink.Text = "https://discord.gg/29NpUTw2sb"
 FooterLink.TextColor3 = Color3.fromRGB(80, 130, 210)
 FooterLink.Font = Enum.Font.Gotham
 FooterLink.TextSize = 10
@@ -703,12 +703,12 @@ Msg4Btn.MouseButton1Click:Connect(function() selectMessageCount(4) end)
 -- Public helpers
 _G.AnswerSammy = function(q)
     local a = answerRiddle(q)
-    print("[Tigy] →", a or "NOT FOUND")
+    print("[Venom] →", a or "NOT FOUND")
     return a
 end
 
 _G.SammyDB = SammyDB
-_G.TigyRedeemer = {
+_G.VenomRedeemer = {
     Start = function()
         if not isSniping then
             StartPillBtn.MouseButton1Click:Fire()
@@ -730,7 +730,7 @@ selectMessageCount(1)
 StatusIndicator.BackgroundColor3 = Color3.fromRGB(175, 65, 65)
 
 print("══════════════════════════════════════")
-print("  Tigy’s Redeemer  |  FULL SOURCE")
+print("  Venom’s Redeemer  |  FULL SOURCE")
 print("  • UI + complete Sammy riddle DB")
 print("  • Auto Riddle scanner")
 print("  • Code / Confirm button firer")
